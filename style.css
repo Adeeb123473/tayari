@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+.head{
+    height: 65px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.scroll-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: blue yellow;
+    position: fixed;
+    right: 0;
+
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: yellow;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+
+    background-color: blue;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+  }
+
+.comp{
+    color: white;
+    font-weight: bold;
+}
+.zone{
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+.nav{
+    height: 40px;
+    width: 100%;
+    font-size: 20PX ;
+    font-weight: bold;
+    background-color: silver;
+display: flex;
+justify-content: space-around;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.HomeContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: darkblue;
+}
+.Home{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 90vh;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: grey;
+    border-bottom-right-radius: 15rem;
+}
+.iphone {
+    width: 300px;
+    height: 600px;
+    background-image: linear-gradient(to bottom right,  yellow, blue);
+    border: 10px solid #333;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+color: white;
+}
+.iphone:hover{
+background-image: linear-gradient(to bottom right,blue,yellow);
+}
+.iphone::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 10px;
+    background-color: #333;
+}
+.macbook {
+    width: 550px;
+    height: 400px;
+    /* background-color: blue; */
+background-image: linear-gradient(to bottom right,  yellow, blue);
+
+    border: 9px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* position: relative; */
+    transition: transform 0.3s ease-in-out;
+}
+.macbook:hover {
+    transform: scaleY(0); /* Adjust the distance to move */
+}
+
+.inner-box {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mac{
+    color: white;
+}
+.tablet {
+    width: 350px;
+    height: 500px;
+    /* background-color: blue; */
+background-image: linear-gradient(to bottom right,  yellow, blue);
+    border: 9px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* position: relative; */
+}
+.tablet:hover{
+    background-image: linear-gradient(to bottom right,  blue, yellow);
+}
+.applecontainer{
+    /* padding-left: 5rem; */
+    display: flex;
+justify-content: space-evenly;
+}
+.Homeapple{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 90vh;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: grey;
+    border-bottom-right-radius: 15rem;
+}
+.left{
+    margin-top: 150px;
+    width: 500px;
+}
+.right{
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    background-image: url(th-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.more{
+    margin-top: 100px;
+    margin-left: 30px;
+}
